@@ -1,0 +1,228 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "New",                         ID_FILE_NEW
+        MENUITEM "Open",                        ID_FILE_OPEN
+        MENUITEM "Save",                        ID_FILE_SAVE
+        MENUITEM "Save as",                     ID_FILE_SAVEAS
+        MENUITEM "Exit",                        ID_FILE_EXIT
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "Abou..",                      ID_ABOUT_ABOU
+    END
+END
+
+IDR_MENU2 MENU
+BEGIN
+    POPUP "Size"
+    BEGIN
+        MENUITEM "1",                           ID_SIZE_1
+        MENUITEM "2",                           ID_SIZE_2
+        MENUITEM "3",                           ID_SIZE_3
+        MENUITEM "4",                           ID_SIZE_4
+        MENUITEM "5",                           ID_SIZE_5
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+ICON_NEW                BITMAP                  "icon\\New.bmp"
+
+ICON_OPEN               BITMAP                  "icon\\Open.bmp"
+
+ICON_REDO               BITMAP                  "icon\\Redo.bmp"
+
+ICON_SAVEAS             BITMAP                  "icon\\Save as.bmp"
+
+ICON_SAVE               BITMAP                  "icon\\Save.bmp"
+
+ICON_UNDO               BITMAP                  "icon\\Undo.bmp"
+
+ICON_PAINTBUCKET        BITMAP                  "icon\\paint-bucket.bmp"
+
+ICON_PAINTBRUSH         BITMAP                  "icon\\paint-palette.bmp"
+
+ICON_ELLIPSE            BITMAP                  "icon\\ellipse.bmp"
+
+ICON_LINE               BITMAP                  "icon\\line.bmp"
+
+ICON_RECTANGLE          BITMAP                  "icon\\rectangle.bmp"
+
+ICON_TRIANGLE           BITMAP                  "icon\\triangle.bmp"
+
+ICON_WIDTH              BITMAP                  "icon\\width.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS
+BEGIN
+    "N",            ID_NEW,                 VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_SAVE,                VIRTKEY, CONTROL, NOINVERT
+    VK_F12,         ID_SAVEAS,              VIRTKEY, NOINVERT
+    "O",            ID_OPEN,                VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_UNDO,                VIRTKEY, CONTROL, NOINVERT
+    "Y",            ID_REDO,                VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 269, 136
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Paint"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,202,112,50,14
+    CONTROL         "MfcLink1",IDC_MFCLINK1,"MfcLink",WS_TABSTOP,63,48,60,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 260
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 126
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ABOUTBOX DLGINIT
+BEGIN
+    IDC_MFCLINK1, 0x37c, 157, 0
+0x4d3c, 0x4346, 0x694c, 0x6b6e, 0x555f, 0x6c72, 0x3c3e, 0x4d2f, 0x4346, 
+0x694c, 0x6b6e, 0x555f, 0x6c72, 0x3c3e, 0x464d, 0x4c43, 0x6e69, 0x5f6b, 
+0x7255, 0x506c, 0x6572, 0x6966, 0x3e78, 0x2f3c, 0x464d, 0x4c43, 0x6e69, 
+0x5f6b, 0x7255, 0x506c, 0x6572, 0x6966, 0x3e78, 0x4d3c, 0x4346, 0x694c, 
+0x6b6e, 0x545f, 0x6f6f, 0x746c, 0x7069, 0x3c3e, 0x4d2f, 0x4346, 0x694c, 
+0x6b6e, 0x545f, 0x6f6f, 0x746c, 0x7069, 0x3c3e, 0x464d, 0x4c43, 0x6e69, 
+0x5f6b, 0x7546, 0x6c6c, 0x6554, 0x7478, 0x6f54, 0x6c6f, 0x6974, 0x3e70, 
+0x4146, 0x534c, 0x3c45, 0x4d2f, 0x4346, 0x694c, 0x6b6e, 0x465f, 0x6c75, 
+0x546c, 0x7865, 0x5474, 0x6f6f, 0x746c, 0x7069, "\076" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    TITLE                   "Paint"
+    IDS_TIPS_NEW            "Create a new picture"
+    IDS_TIPS_SAVE           "Save the current picture"
+    IDS_TIPS_SAVEAS         "Save the current picture as a new file"
+    IDS_TIPS_OPEN           "Open an existing picture"
+    IDS_TIPS_UNDO           "Undo last action"
+    IDS_TIPS_REDO           "Redo last action"
+    IDS_TIPS_PAINTBUCKET    "Background color"
+    IDS_TIPS_PAINTBRUSH     "Foreground color"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
