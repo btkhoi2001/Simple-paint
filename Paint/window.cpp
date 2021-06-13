@@ -452,7 +452,7 @@ void Window::chooseColor(D2D1_COLOR_F& color) {
     cc.lStructSize = sizeof(CHOOSECOLOR);
     cc.hwndOwner = _canvasHwnd;
     cc.lpCustColors = (LPDWORD)custColors;
-    cc.Flags =  CC_SOLIDCOLOR | CC_SHOWHELP;
+    cc.Flags = CC_FULLOPEN | CC_SHOWHELP;
 
     if (ChooseColor(&cc)) {
         float r = (float)GetRValue(cc.rgbResult) / 255;
@@ -838,7 +838,7 @@ BOOL Window::create(PCWSTR lpWindownName, DWORD dwStyle, DWORD dwExStyle, int x,
     wc.cbClsExtra = 0;
     wc.cbWndExtra = 0;
     wc.hInstance = GetModuleHandle(NULL);
-    wc.hIcon = NULL;
+    wc.hIcon = LoadIcon(GetModuleHandle(NULL), MAKEINTRESOURCE(IDI_ICON1));
     wc.hCursor = LoadCursor(nullptr, IDC_ARROW);
     wc.hbrBackground = (HBRUSH)(COLOR_BTNFACE + 1);
     wc.lpszMenuName = MAKEINTRESOURCEW(IDR_MENU1);

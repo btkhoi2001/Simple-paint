@@ -2,8 +2,7 @@
 #include <wingdi.h>
 #define MAX_LOADSTRING 100
 
-int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE, PWSTR, int nCmdShow)
-{
+int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE, PWSTR, int nCmdShow) {
 	WCHAR szTitle[100];
 	Window mainWindow;
 

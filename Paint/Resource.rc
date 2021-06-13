@@ -60,10 +60,6 @@ BEGIN
         MENUITEM "Save as",                     ID_FILE_SAVEAS
         MENUITEM "Exit",                        ID_FILE_EXIT
     END
-    POPUP "Help"
-    BEGIN
-        MENUITEM "About..",                     ID_HELP_ABOUT
-    END
 END
 
 IDR_MENU2 MENU
@@ -96,10 +92,6 @@ ICON_SAVE               BITMAP                  "icon\\Save.bmp"
 
 ICON_UNDO               BITMAP                  "icon\\Undo.bmp"
 
-ICON_PAINTBUCKET        BITMAP                  "icon\\paint-bucket.bmp"
-
-ICON_PAINTBRUSH         BITMAP                  "icon\\paint-palette.bmp"
-
 ICON_ELLIPSE            BITMAP                  "icon\\ellipse.bmp"
 
 ICON_LINE               BITMAP                  "icon\\line.bmp"
@@ -109,6 +101,10 @@ ICON_RECTANGLE          BITMAP                  "icon\\rectangle.bmp"
 ICON_TRIANGLE           BITMAP                  "icon\\triangle.bmp"
 
 ICON_WIDTH              BITMAP                  "icon\\width.bmp"
+
+ICON_PAINTBRUSH         BITMAP                  "icon\\paint-brush.bmp"
+
+ICON_PAINTBUCKET        BITMAP                  "icon\\paint-bucket.bmp"
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -129,18 +125,28 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 //
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon\\paint-palette.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
 // String Table
 //
 
 STRINGTABLE
 BEGIN
     TITLE                   "Paint"
-    IDS_TIPS_NEW            "New (Ctrl + N)\n  Create a new object"
-    IDS_TIPS_SAVE           "Save (Ctrl + S)\n  Save the current object"
-    IDS_TIPS_SAVEAS         "Save as (F12)\n  Save the current object as a new file"
-    IDS_TIPS_OPEN           "Open an existing picture"
-    IDS_TIPS_UNDO           "Undo last action"
-    IDS_TIPS_REDO           "Redo last action"
+    IDS_TIPS_NEW            "New (Ctrl + N)\n   Create a new object   "
+    IDS_TIPS_SAVE           "Save (Ctrl + S)\n   Save the current object   "
+    IDS_TIPS_SAVEAS         "Save as (F12)\n   Save the current object as a new file   "
+    IDS_TIPS_OPEN           "Open (Ctrl + O)\n   Open an existing object   "
+    IDS_TIPS_UNDO           "Undo (Ctrl + Z)\n   Undo last action   "
+    IDS_TIPS_REDO           "Redo (Ctrl + Y)\n   Redo last action   "
     IDS_TIPS_PAINTBUCKET    "Background color"
     IDS_TIPS_PAINTBRUSH     "Foreground color"
 END

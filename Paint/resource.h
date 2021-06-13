@@ -2,6 +2,7 @@
 // Microsoft Visual C++ generated include file.
 // Used by Resource.rc
 //
+#define ICON_PAINTBUCKET                2
 #define IDR_MENU1                       101
 #define TITLE                           102
 #define ICON_NEW                        103
@@ -18,8 +19,6 @@
 #define ICON_UNDO                       109
 #define IDS_TIPS_PAINTBUCKET            109
 #define IDS_TIPS_PAINTBRUSH             110
-#define ICON_PAINTBUCKET                118
-#define ICON_PAINTBRUSH                 119
 #define ICON_ELLIPSE                    120
 #define ICON_LINE                       121
 #define ICON_RECTANGLE                  122
@@ -27,6 +26,8 @@
 #define ICON_WIDTH                      124
 #define IDR_MENU2                       125
 #define IDR_ACCELERATOR1                126
+#define ICON_PAINTBRUSH                 132
+#define IDI_ICON1                       135
 #define ID_FILE_NEW                     40001
 #define ID_FILE_OPEAN                   40002
 #define ID_FILE_SAVE                    40003
@@ -55,7 +56,7 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        132
+#define _APS_NEXT_RESOURCE_VALUE        136
 #define _APS_NEXT_COMMAND_VALUE         40025
 #define _APS_NEXT_CONTROL_VALUE         1011
 #define _APS_NEXT_SYMED_VALUE           101

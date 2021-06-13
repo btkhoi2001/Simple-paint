@@ -153,6 +153,15 @@
     <Image Include="icon\width.bmp">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="icon\paint-brush.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icon\paint-palette.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icon\paint-palette.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="dpiaware.manifest" />

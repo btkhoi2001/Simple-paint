@@ -179,8 +179,11 @@
     <Image Include="icon\line.bmp" />
     <Image Include="icon\New.bmp" />
     <Image Include="icon\Open.bmp" />
+    <Image Include="icon\paint-brush.bmp" />
     <Image Include="icon\paint-bucket.bmp" />
     <Image Include="icon\paint-palette.bmp" />
+    <Image Include="icon\paint-palette.ico" />
+    <Image Include="icon\paint-palette.png" />
     <Image Include="icon\Paste.bmp" />
     <Image Include="icon\rectangle.bmp" />
     <Image Include="icon\Redo.bmp" />
