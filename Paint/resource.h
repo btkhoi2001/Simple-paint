@@ -27,9 +27,6 @@
 #define ICON_WIDTH                      124
 #define IDR_MENU2                       125
 #define IDR_ACCELERATOR1                126
-#define IDD_DIALOG1                     127
-#define IDD_ABOUTBOX                    127
-#define IDC_MFCLINK1                    1001
 #define ID_FILE_NEW                     40001
 #define ID_FILE_OPEAN                   40002
 #define ID_FILE_SAVE                    40003
@@ -51,14 +48,16 @@
 #define ID_FILE_OPEN                    40020
 #define ID_ABOUT40021                   40021
 #define ID_ABOUT_ABOU                   40022
+#define ID_ABOUT_ABOUT                  40023
+#define ID_HELP_ABOUT                   40024
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        130
-#define _APS_NEXT_COMMAND_VALUE         40023
-#define _APS_NEXT_CONTROL_VALUE         1002
+#define _APS_NEXT_RESOURCE_VALUE        132
+#define _APS_NEXT_COMMAND_VALUE         40025
+#define _APS_NEXT_CONTROL_VALUE         1011
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

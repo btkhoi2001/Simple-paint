@@ -62,7 +62,7 @@ BEGIN
     END
     POPUP "Help"
     BEGIN
-        MENUITEM "Abou..",                      ID_ABOUT_ABOU
+        MENUITEM "About..",                     ID_HELP_ABOUT
     END
 END
 
@@ -129,81 +129,15 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 //
-// Dialog
-//
-
-IDD_ABOUTBOX DIALOGEX 0, 0, 269, 136
-STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "About Paint"
-FONT 8, "MS Shell Dlg", 400, 0, 0x1
-BEGIN
-    DEFPUSHBUTTON   "OK",IDOK,202,112,50,14
-    CONTROL         "MfcLink1",IDC_MFCLINK1,"MfcLink",WS_TABSTOP,63,48,60,14
-END
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// DESIGNINFO
-//
-
-#ifdef APSTUDIO_INVOKED
-GUIDELINES DESIGNINFO
-BEGIN
-    IDD_ABOUTBOX, DIALOG
-    BEGIN
-        LEFTMARGIN, 8
-        RIGHTMARGIN, 260
-        TOPMARGIN, 6
-        BOTTOMMARGIN, 126
-    END
-END
-#endif    // APSTUDIO_INVOKED
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// AFX_DIALOG_LAYOUT
-//
-
-IDD_ABOUTBOX AFX_DIALOG_LAYOUT
-BEGIN
-    0
-END
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Dialog Info
-//
-
-IDD_ABOUTBOX DLGINIT
-BEGIN
-    IDC_MFCLINK1, 0x37c, 157, 0
-0x4d3c, 0x4346, 0x694c, 0x6b6e, 0x555f, 0x6c72, 0x3c3e, 0x4d2f, 0x4346, 
-0x694c, 0x6b6e, 0x555f, 0x6c72, 0x3c3e, 0x464d, 0x4c43, 0x6e69, 0x5f6b, 
-0x7255, 0x506c, 0x6572, 0x6966, 0x3e78, 0x2f3c, 0x464d, 0x4c43, 0x6e69, 
-0x5f6b, 0x7255, 0x506c, 0x6572, 0x6966, 0x3e78, 0x4d3c, 0x4346, 0x694c, 
-0x6b6e, 0x545f, 0x6f6f, 0x746c, 0x7069, 0x3c3e, 0x4d2f, 0x4346, 0x694c, 
-0x6b6e, 0x545f, 0x6f6f, 0x746c, 0x7069, 0x3c3e, 0x464d, 0x4c43, 0x6e69, 
-0x5f6b, 0x7546, 0x6c6c, 0x6554, 0x7478, 0x6f54, 0x6c6f, 0x6974, 0x3e70, 
-0x4146, 0x534c, 0x3c45, 0x4d2f, 0x4346, 0x694c, 0x6b6e, 0x465f, 0x6c75, 
-0x546c, 0x7865, 0x5474, 0x6f6f, 0x746c, 0x7069, "\076" 
-    0
-END
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
 // String Table
 //
 
 STRINGTABLE
 BEGIN
     TITLE                   "Paint"
-    IDS_TIPS_NEW            "Create a new picture"
-    IDS_TIPS_SAVE           "Save the current picture"
-    IDS_TIPS_SAVEAS         "Save the current picture as a new file"
+    IDS_TIPS_NEW            "New (Ctrl + N)\n  Create a new object"
+    IDS_TIPS_SAVE           "Save (Ctrl + S)\n  Save the current object"
+    IDS_TIPS_SAVEAS         "Save as (F12)\n  Save the current object as a new file"
     IDS_TIPS_OPEN           "Open an existing picture"
     IDS_TIPS_UNDO           "Undo last action"
     IDS_TIPS_REDO           "Redo last action"

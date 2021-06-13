@@ -1,4 +1,5 @@
 #include "window.h"
+#include <wingdi.h>
 #define MAX_LOADSTRING 100
 
 int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE, PWSTR, int nCmdShow)
@@ -22,6 +23,5 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE, PWSTR, int nCmdShow)
 			DispatchMessage(&msg);
 		}
 	}
-
 	return 0;
 }

@@ -190,6 +190,9 @@
     <Image Include="icon\Undo.bmp" />
     <Image Include="icon\width.bmp" />
   </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="dpiaware.manifest" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
