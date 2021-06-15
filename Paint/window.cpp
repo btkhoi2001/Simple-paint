@@ -545,9 +545,27 @@ HRESULT Window::showOpenObjectDialog() {
         hr = pShellResult->GetDisplayName(SIGDN_FILESYSPATH, &pszFilePath);
     
     if (SUCCEEDED(hr)) {
+        if (!_isSaved) {
+            int msgboxID = showSaveConfirmDialog();
+
+            switch (msgboxID) {
+            case IDYES:
+                showSaveObjectDialog();
+                break;
+
+            case IDNO:
+                // Do nothing
+                break;
+
+            case IDCANCEL:
+                // Do nothing
+                return S_OK;
+            }
+        }
+
+        resetWindow();
         _filePath.assign(pszFilePath);
         _isBinded = true;
-        _isSaved = true;
         _shapeContainer.loadFromFile(_filePath);
         InvalidateRect(_canvasHwnd, NULL, FALSE);
     }
